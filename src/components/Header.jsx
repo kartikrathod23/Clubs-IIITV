@@ -225,7 +225,7 @@ const Header = () => {
               {/* Profile Icon */}
               <NavLink
                 to="/profile"
-                className="text-purple-400 border-purple-600 border-2 hover:text-pink-400 font-semibold rounded-3xl hover:border-pink-500 text-md px-4 lg:px-9 py-1 lg:py-1.5 mr-2 md:flex hidden"
+                className="text-purple-400 border-purple-600 border-2 hover:text-pink-400 font-semibold rounded-3xl hover:border-pink-500 text-md px-4 lg:px-9 py-1 lg:py-1.5 mr-2 md:flex"
               >
                 <FontAwesomeIcon icon={faUser} size="lg" className="mr-1" />
                 Profile
@@ -238,7 +238,7 @@ const Header = () => {
               </NavLink>
               <button
                 onClick={handleLogout}
-                className="text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:text-purple-600 hover:border-2 hover:border-purple-500 hover:bg-none font-medium rounded-3xl text-md px-4 lg:px-5 py-1 lg:py-1.5 mr-2 md:flex hidden"
+                className="text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:text-purple-600 hover:border-2 hover:border-purple-500 hover:bg-none font-medium rounded-3xl text-md px-4 lg:px-5 py-1 lg:py-1.5 mr-2 md:flex"
               >
                 <FontAwesomeIcon icon={faSignOutAlt} size="lg" className="mr-1" />
                 LogOut
