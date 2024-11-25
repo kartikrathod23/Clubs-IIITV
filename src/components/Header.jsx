@@ -46,7 +46,7 @@ const Header = () => {
     <nav className="p-4 bg-gradient-to-r from-fuchsia-900 shadow-lg to-gray-700 text-white overflow-x-hidden">
       <ul className="flex justify-between items-center">
    
-        <div className="hidden md:flex space-x-4">
+        <div className="md:inline-flex md:space-x-4">
           <li>
             <NavLink
               to="/"

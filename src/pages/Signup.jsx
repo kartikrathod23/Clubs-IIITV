@@ -38,7 +38,7 @@ function Signup() {
     return (
         <>
         <Header/>
-        <div className="w-full h-screen flex items-center justify-center bg-gradient-to-r from-fuchsia-990 to-gray-400">
+        <div className="w-full mt-28 sm:mt-0 h-screen flex items-center justify-center bg-gradient-to-r from-fuchsia-990 to-gray-400">
             <div className="md:w-2/4 w-full m-10 -mt-20 md:mt-4 p-6 bg-gray-400 rounded-md shadow-xl">
                 <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                     <p className="text-center font-bold text-2xl text-black">JOIN US</p>

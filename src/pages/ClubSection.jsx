@@ -74,7 +74,7 @@ function ClubSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {clubsData.map((club, index) => (
                         <div key={index} className="bg-gradient-to-r from-fuchsia-990 via-pink-500 to-gray-400 rounded-lg shadow-md overflow-hidden hover:scale-105 transform transition-all duration-300">
-                            <img src={club.image} alt={`${club.name} Image`} className="w-full h-1/2 object-cover rounded-b-md" />
+                            <img src={club.image} alt={`${club.name} Image`} className="w-full object-cover rounded-b-md" />
                             <div className="p-6">
                                 <h3 className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 text-2xl text-white md:text-3xl mb-2">{club.name}</h3>
                                 <p className="text-white">{club.description}</p>
