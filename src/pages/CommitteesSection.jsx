@@ -2,6 +2,7 @@ import React from 'react';
 import literatureImage from '../images/academics.jpg';
 import technicalImage from '../images/technical.png';
 import culturalImage from '../images/cultural.jpg';
+import {Link} from 'react-router-dom'
 
 function CommitteesSection() {
     return (
@@ -53,9 +54,11 @@ function CommitteesSection() {
                                 <p className="text-md text-gray-900 mb-4">
                                     {committee.description}
                                 </p>
+                                <Link to='/committees'>
                                 <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 px-4 rounded-full hover:from-purple-600 hover:to-pink-600 transition-colors duration-300">
                                     Explore More
                                 </button>
+                                </Link>
                             </div>
                         </div>
                     ))}
