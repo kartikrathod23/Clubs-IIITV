@@ -62,7 +62,7 @@ const Dashboard = () => {
             <ClubChatBox />
           </div>
 
-          <div className="w-1 bg-gradient-to-b from-purple-600 to-pink-600 shadow-3xl shadow-pink-white -mt-7 rounded-full"></div>
+          <div className="w-1 bg-gradient-to-b from-purple-600 to-pink-600 shadow-3xl shadow-pink-white -mt-4 rounded-full"></div>
 
           <div className="flex flex-col gap-4  md:justify-between md:w-1/3 w-full">
             <Announcements club={club} />

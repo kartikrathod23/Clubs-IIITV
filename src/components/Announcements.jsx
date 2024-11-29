@@ -68,6 +68,22 @@ const Announcements = ({ club }) => {
     }
   };
 
+  const formatDateTime = (isoString) => {
+    const date = new Date(isoString);
+    
+    const options = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true,
+      timeZone: 'UTC', 
+    };
+  
+    return date.toLocaleString('en-US', options);
+  };
+
   return (
     <div className="relative backdrop-filter backdrop-blur-sm bg-black bg-opacity-35 rounded-lg p-2">
       <div className="flex justify-between">
@@ -86,7 +102,7 @@ const Announcements = ({ club }) => {
       >
         <ul className="space-y-2">
           {announcements.map((announcement) => (
-            <li key={announcement.$id} className="mb-2 relative">
+            <li key={announcement.$id} className="mb-3 relative">
               <button
                 onClick={() => handleDelete(announcement.$id)}
                 className="absolute top-1 right-1 text-white bg-black p-1 rounded-full opacity-75 hover:opacity-100 flex items-center justify-center"
@@ -94,9 +110,9 @@ const Announcements = ({ club }) => {
               >
                 <FontAwesomeIcon icon={faTrash} />
               </button>
-              <h3 className="font-semibold text-white">{announcement.title}</h3>
-              <p className="text-sm text-gray-50">{announcement.dateTime}</p>
-              <p className="text-gray-100">{announcement.description}</p>
+              <h3 className="font-semibold text-md text-white">{announcement.title}</h3>
+              <p className="text-gray-200">{announcement.description}</p>
+              <p className="text-sm text-gray-200">{formatDateTime(announcement.dateTime)}</p>
             </li>
           ))}
         </ul>

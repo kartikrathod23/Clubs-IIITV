@@ -102,7 +102,7 @@ const ClubNavbar = ({ club }) => {
       </nav>
 
       {/* Divider */}
-      <div className="w-full h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 shadow-2xl shadow-pink-500 mt-1 rounded-full"></div>
+      <div className="w-full h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 shadow-2xl shadow-pink-500 -mt-2 md:-mt-4 rounded-full"></div>
     </div>
   );
 };
